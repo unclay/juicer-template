@@ -1,0 +1,1 @@
+module.exports = require("./libs/juicer-template.js");

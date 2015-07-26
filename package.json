@@ -1,0 +1,22 @@
+{
+  "name": "juicer-template",
+  "version": "1.0.0",
+  "description": "借助juicer建立个人模板引擎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unclay/juicer-template.git"
+  },
+  "author": "unclay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unclay/juicer-template/issues"
+  },
+  "homepage": "https://github.com/unclay/juicer-template",
+  "dependencies": {
+    "juicer": "^0.6.10-stable"
+  }
+}
