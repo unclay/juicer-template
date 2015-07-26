@@ -11,8 +11,8 @@
 ## api
 调用时需传入一个json对象参数
 + cache, 默认true, 即默认使用模板缓存
-+ jviews, 默认"/jviews", 存放模板文件
-+ views, 默认"views", 存放视图文件
++ jviews, 默认"views_juicer", 存放模板文件的目录
++ views, 默认"views", 存放视图文件的目录
 + domain, 默认为空对象{}, 用于定义domain变量
 
 ## 详细demo，待定
