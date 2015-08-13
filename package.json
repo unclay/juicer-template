@@ -1,6 +1,6 @@
 {
   "name": "juicer-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "借助juicer建立个人模板引擎",
   "main": "index.js",
   "scripts": {

@@ -12,6 +12,9 @@ function setSiteDomain(sitesource, data){
 var _template = {};
 var layout_html = '';
 module.exports = function(option) {
+    if( option.set ){
+        juicer.set(option.set);
+    }
     option.cache = option.cache == false ? false : true;
     option.jviews = option.views || "/views_juicer/";
     option.views = option.views || "/views/";
