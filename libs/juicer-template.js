@@ -5,8 +5,24 @@ var DEBUG = false;
 function log(){
     DEBUG && console.log.apply(this, arguments);
 }
+function domainFormat(data, domain){
+    for( var i in domain ){
+        console.log( new RegExp('${'+i+'}','g') );
+        data = data.replace( new RegExp('\\${'+i+'}','g'), domain[i] );
+    }
+    return data;
+}
 
 function setSiteDomain(sitesource, data){
+    if( !!data['note'] ){
+        if( Object.prototype.toString.call(data['note']) === '[object Array]' ){
+            for(var i=0; i<data['note'].length; i++){
+                data['note'][i].content = domainFormat(data['note'][i].content, sitesource);
+            }
+        } else if( Object.prototype.toString.call(data['note']) === '[object Object]' ){
+            data['note'].content = domainFormat(data['note'].content, sitesource);
+        }
+    }
     for(var i in sitesource){
         data[i] = sitesource[i];
     }

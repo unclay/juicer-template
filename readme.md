@@ -10,6 +10,7 @@
 
 ## api
 调用时需传入一个json对象参数
++ debug 默认false
 + cache, 默认true, 即默认使用模板缓存
 + jviews, 默认"views_juicer", 存放模板文件的目录
 + views, 默认"views", 存放视图文件的目录
